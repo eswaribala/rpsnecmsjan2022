@@ -1,3 +1,4 @@
 docker run --name nec-mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=necdevdb -e MYSQL_USER=demo_user -e MYSQL_PASSWORD=demo_pass -d mysql
 mysql client
 docker exec -it nec-mysql mysql -u root -p
+docker build -f dockerfile -t customerapp .
